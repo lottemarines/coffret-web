@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<!--[if lt IE 10]> <html  lang="en" class="iex"> <![endif]-->
+<!--[if (gt IE 10)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Two sides 1 | Demo | Minimal</title>
+    <meta name="description" content="Two sides template, innovative HTML web site effects and design.">
+    <script src="../scripts/jquery.min.js"></script>
+    <link rel="stylesheet" href="../scripts/bootstrap/css/bootstrap.css">
+    <script src="../scripts/script.js"></script>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/fullpage.twoside.css">
+    <link rel="stylesheet" href='../css/animations.css'>
+    <link rel="stylesheet" href='../css/content-box.css'>
+    <link rel="stylesheet" href='../css/components.css'>
+    <link rel="stylesheet" href='../css/image-box.css'>
+    <link rel="stylesheet" href="../scripts/magnific-popup.css">
+    <link rel="stylesheet" href="../scripts/flexslider/flexslider.css">
+    <link rel="stylesheet" href="../skin.css">
+    <link rel="icon" href="../favicon.ico">
+    <!-- Extra optional content header -->
+</head>
+<body>
+    <div id="preloader"></div>
+    <div class="background-page">
+        <div class="flexslider slider" data-options="directionNav:false,animation:fade,slideshowSpeed:5000">
+            <ul class="slides">
+                <li>
+                    <div class="bg-cover" style="background-image:url('../images/hd-13.jpg')"><div class="bg-overlay line-45"></div></div>
+                </li>
+                <li>
+                    <div class="bg-cover" style="background-image:url('../images/hd-12.jpg')"><div class="bg-overlay line-45"></div></div>
+                </li>
+                <li>
+                    <div class="bg-cover" style="background-image:url('../images/hd-13.jpg')"><div class="bg-overlay line-45"></div></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="sec-twoside">
+        <div class="row">
+            <div class="half-side white left">
+                <div class="content">
+                    <h1 class="text-xl"><span class=" text-color">The two sides</span><br />template is here</h1>
+                    <hr class="space m" />
+                    <hr class="e text-right hidden-xs" />
+                    <hr class="space m" />
+                    <div class="countdown" data-time="01/01/2017 10:30:00" data-utc-offset="-5">
+                        <span class="days countdown-values text-xl">00</span><span class="countdown-label"> Days</span>
+                        <span class="hours countdown-values text-xl">00</span><span class="countdown-label"> Hours</span>
+                        <span class="minutes countdown-values text-xl">00</span><span class="countdown-label"> Minutes</span>
+                        <span class="seconds countdown-values text-xl">00</span><span class="countdown-label"> Seconds</span>
+                    </div>
+                    <hr class="space" />
+                    <a href="#" class="btn btn-sm hidden-xs" onclick="openSection(0)">START THE SHOW</a>
+                </div>
+            </div>
+            <div class="half-side right">
+                <div class="content">
+                    <div id="twosides-menu">
+                        <div class="twoside-open"><hr />About us</div>
+                        <div class="twoside-open"><hr />Gallery</div>
+                        <div class="twoside-open"><hr />Services</div>
+                        <div class="twoside-open"><hr />Contacts</div>
+                    </div>
+                </div>
+            </div>
+            <div id="twosides-main">
+                <div class="section center-box">
+                    <div class="content">
+                        <div class="row">
+                            <div class="col-md-6 boxed white">
+                                <div class="icon-background">
+                                    <div>
+                                        <h2>We are great designer</h2>
+                                        <hr class="space m" />
+                                        <p>
+                                            Ask your questions away and let our dedicated customer service help you look through our FAQs to get your questions answered!
+                                            Consectetur, ullamco nunc metus imperdiet recusandae laboriosam elementum? Quisque atque. Ea platea, totam amet consequatur commodi, corrupti odit, deleniti at harum ligula.
+                                        </p>
+                                    </div>
+                                    <i class="fa fa-heart-o i-background" style="font-size: 235px; margin-top: 65px;"></i>
+                                </div>
+                            </div>
+                            <div class="col-md-6 boxed-inverse">
+                                <div class="icon-background">
+                                    <div>
+                                        <h2>Developers with attitude</h2>
+                                        <hr class="space m" />
+                                        <p>
+                                            Ask your questions away and let our dedicated customer service help you look through our FAQs to get your questions answered!
+                                            Consectetur, ullamco nunc metus imperdiet recusandae laboriosam elementum? Quisque atque. Ea platea, totam amet consequatur commodi, corrupti odit, deleniti at harum ligula.
+                                        </p>
+                                    </div>
+                                    <i class="fa fa-heart-o i-background" style="font-size: 235px; margin-top: 65px;"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section white center-box">
+                    <div class="content">
+                        <div class="scroll-content scroll-mobile-disabled" data-height="365" data-options=" ">
+                            <div class="grid-list gallery">
+                                <div class="grid-box row" data-lightbox-anima="show-scale">
+                                    <div class="grid-item col-md-4">
+                                        <a class="img-box thumbnail i-center img-scale-up" href="../images/gallery/image-1.jpg">
+                                            <span>
+                                                <i class="fa fa-camera"></i>
+                                                <img src="../images/gallery/image-1.jpg" alt="" />
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="grid-item col-md-4">
+                                        <a class="img-box thumbnail i-center img-scale-up" href="../images/gallery/image-2.jpg">
+                                            <span>
+                                                <i class="fa fa-camera"></i>
+                                                <img src="../images/gallery/image-2.jpg" alt="" />
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="grid-item col-md-4">
+                                        <a class="img-box thumbnail mfp-iframe i-center img-scale-up" href="https://www.youtube.com/watch?v=bpqhStV2_rc">
+                                            <span>
+                                                <i class="fa fa-film"></i>
+                                                <img src="../images/gallery/image-3.jpg" alt="" />
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="grid-item col-md-4">
+                                        <a class="img-box thumbnail i-center img-scale-up" href="../images/gallery/image-4.jpg">
+                                            <span>
+                                                <i class="fa fa-camera"></i>
+                                                <img src="../images/gallery/image-4.jpg" alt="" />
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="grid-item col-md-4">
+                                        <a class="img-box thumbnail i-center img-scale-up" href="../images/gallery/image-6.jpg">
+                                            <span>
+                                                <i class="fa fa-camera"></i>
+                                                <img src="../images/gallery/image-6.jpg" alt="" />
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="grid-item col-md-4">
+                                        <a class="img-box thumbnail i-center img-scale-up" href="../images/gallery/image-7.jpg">
+                                            <span>
+                                                <i class="fa fa-camera"></i>
+                                                <img src="../images/gallery/image-7.jpg" alt="" />
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="grid-item col-md-4">
+                                        <a class="img-box thumbnail i-center img-scale-up" href="../images/gallery/image-8.jpg">
+                                            <span>
+                                                <i class="fa fa-camera"></i>
+                                                <img src="../images/gallery/image-8.jpg" alt="" />
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="grid-item col-md-4">
+                                        <a class="img-box thumbnail i-center img-scale-up" href="../images/gallery/image-9.jpg">
+                                            <span>
+                                                <i class="fa fa-camera"></i>
+                                                <img src="../images/gallery/image-9.jpg" alt="" />
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="grid-item col-md-4">
+                                        <a class="img-box thumbnail mfp-iframe i-center img-scale-up" href="https://www.youtube.com/watch?v=bpqhStV2_rc">
+                                            <span>
+                                                <i class="fa fa-film"></i>
+                                                <img src="../images/gallery/image-10.jpg" alt="" />
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="grid-item col-md-4">
+                                        <a class="img-box thumbnail i-center img-scale-up" href="../images/gallery/image-11.jpg">
+                                            <span>
+                                                <i class="fa fa-camera"></i>
+                                                <img src="../images/gallery/image-11.jpg" alt="" />
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="grid-item col-md-4">
+                                        <a class="img-box thumbnail i-center img-scale-up" href="../images/gallery/image-12.jpg">
+                                            <span>
+                                                <i class="fa fa-camera"></i>
+                                                <img src="../images/gallery/image-12.jpg" alt="" />
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="grid-item col-md-4">
+                                        <a class="img-box thumbnail i-center img-scale-up" href="../images/gallery/image-13.jpg">
+                                            <span>
+                                                <i class="fa fa-camera"></i>
+                                                <img src="../images/gallery/image-13.jpg" alt="" />
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section center-box">
+                    <div class="content">
+                        <div class="row">
+                            <div class="grid-list gallery white">
+                                <div class="grid-box row">
+                                    <div class="grid-item col-md-6">
+                                        <div class="advs-box advs-box-top-icon boxed white" data-anima="rotate-20" data-trigger="hover">
+                                            <i class="im-puzzle icon circle anima rotate-20"></i>
+                                            <h3>WEB MARKETING</h3>
+                                            <p>
+                                                Lorem ipsum dolor sitamet consectetur adipisicing elit sed do eiusmod tempor incididunt
+                                                ut labore et dolore magna aliqua
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="grid-item col-md-6">
+                                        <div class="advs-box advs-box-top-icon boxed white" data-anima="rotate-20" data-trigger="hover">
+                                            <i class="im-queen-2 icon circle anima rotate-20"></i>
+                                            <h3>SEO</h3>
+                                            <p>
+                                                Lorem ipsum dolor sitamet consectetur adipisicing elit sed do eiusmod tempor incididunt
+                                                ut labore et dolore magna aliqua
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="grid-item col-md-6">
+                                        <div class="advs-box advs-box-top-icon boxed white" data-anima="rotate-20" data-trigger="hover">
+                                            <i class="im-reddit icon circle anima rotate-20"></i>
+                                            <h3>WEB DESIGN</h3>
+                                            <p>
+                                                Lorem ipsum dolor sitamet consectetur adipisicing elit sed do eiusmod tempor incididunt
+                                                ut labore et dolore magna aliqua
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="grid-item col-md-6">
+                                        <div class="advs-box advs-box-top-icon boxed white" data-anima="rotate-20" data-trigger="hover">
+                                            <i class="im-movie icon circle anima rotate-20"></i>
+                                            <h3>VIDEO PRODUCTION</h3>
+                                            <p>
+                                                Lorem ipsum dolor sitamet consectetur adipisicing elit sed do eiusmod tempor incididunt
+                                                ut labore et dolore magna aliqua
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="grid-item col-md-6">
+                                        <div class="advs-box advs-box-top-icon boxed white" data-anima="rotate-20" data-trigger="hover">
+                                            <i class="im-myspace icon circle anima rotate-20"></i>
+                                            <h3>SOCIAL MARKETING</h3>
+                                            <p>
+                                                Lorem ipsum dolor sitamet consectetur adipisicing elit sed do eiusmod tempor incididunt
+                                                ut labore et dolore magna aliqua
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="grid-item col-md-6">
+                                        <div class="advs-box advs-box-top-icon boxed" data-anima="rotate-20" data-trigger="hover">
+                                            <i class="im-navigation-rightwindow icon circle anima rotate-20"></i>
+                                            <h3>WEB SITES</h3>
+                                            <p>
+                                                Lorem ipsum dolor sitamet consectetur adipisicing elit sed do eiusmod tempor incididunt
+                                                ut labore et dolore magna aliqua
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list-nav">
+                                    <ul class="pagination-sm pagination-grid" data-page-items="2" data-pagination-anima="show-scale"></ul>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="section center-box">
+                    <div class="content">
+                        <div class="row white proporzional-row">
+                            <div class="col-md-8">
+                                <div class="google-map" data-trigger="manual" data-address="New York, US" data-marker="http://templates.framework-y.com/minimal/images/marker-map.png"></div>
+                            </div>
+                            <div class="col-md-4 boxed">
+                                <h4>ADDRESS</h4>
+                                <p>
+                                    05, Martin Street<br>
+                                    Orange C, California<br>
+                                    United States of America
+                                </p>
+                                <h4>CONTACTS</h4>
+                                <p>
+                                    <b>P</b> 900 123 0000<br>
+                                    <b>F</b> 900 123 0001<br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="center-bg"></div>
+            <div class="close-button"></div>
+        </div>
+    </div>
+    <footer class="footer-center footer-minimal">
+        <link rel="stylesheet" href="../scripts/iconsmind/line-icons.min.css">
+        <script async src="../scripts/bootstrap/js/bootstrap.min.js"></script>
+        <script src="../scripts/flexslider/jquery.flexslider-min.js"></script>
+        <script src="../scripts/fullpage.twoside.js"></script>
+        <script src='../scripts/jquery.slimscroll.min.js'></script>
+        <script src='../scripts/jquery.progress-counter.js'></script>
+        <script src="../scripts/jquery.magnific-popup.min.js"></script>
+        <script src='../scripts/jquery.twbsPagination.min.js'></script>
+        <script src='https://maps.googleapis.com/maps/api/js?sensor=false&key=AIzaSyCp69VyBGUlCdAAsfgcRvf3Pg57B6vNHd8'></script>
+        <script src='../scripts/google.maps.min.js'></script>
+    </footer>
+</body>
+</html>
