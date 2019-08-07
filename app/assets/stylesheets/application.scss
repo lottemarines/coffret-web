@@ -14,7 +14,11 @@
 // Custom bootstrap variables must be set or imported *before* bootstrap.
 @import "bootstrap-sprockets";
 @import "bootstrap";
-@import 'font-awesome-sprockets';
-@import 'font-awesome';
+@import "font-awesome-sprockets";
+@import "font-awesome";
 @import "css/linear-icons";
 @import "css/style";
+@import "css/animate";
+@import "css/nouislider";
+@import "css/owl.carousel";
+@import "css/owl.theme";
