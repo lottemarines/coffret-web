@@ -7,10 +7,34 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 	  
+	  <!-- 一番上のバー -->
+    <div class="top-menu top-menu-inverse">
+        <div class="container">
+            <p><span class="left">ここにはお知らせ等を記入する場所にする <span class="text-primary"><strong>強調</strong></span>ここで挟まれる</span>
+                <span class="right">
+                    <a href="my-account.html"><i class="lnr lnr-user"></i> <span>Myアカウント</span></a>
+                    <a href="login-register.html"><i class="lnr lnr-lock"></i> <span>ログイン・新規会員登録</span></a>
+                    <a href="shopping-cart.html"><i class="lnr lnr-cart"></i> <span>カート (2)</span></a>
+                </span>
+            </p>
+        </div>
+    </div>
+	  
+	<!-- 2番目のバー　-->
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">
+				<%= image_tag 'logo.png' %>
+            </div><!-- / navbar-header -->
   </head>
-  <body>
-    <!-- <div class="container"> -->
+	
+  
 	  <%= yield %>
-	<!-- </div> -->
-  </body>
 </html>
