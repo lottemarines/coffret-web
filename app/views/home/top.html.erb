@@ -1,33 +1,19 @@
-<body>
-
-<!-- preloader -->
-<div id="preloader">
-    <div class="spinner spinner-round"></div>
-</div>
-<!-- / preloader -->
-
-
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ジャンルを選ぶ<span class="caret"></span></a>
-                        <ul class="dropdown-menu pulse animated">
-                            <li><a href="shop-right.html">Shop: Right Sidebar</a></li>
-                            <li><a href="shop-left.html">Shop: Left Sidebar</a></li>
-                            <li class="active"><a href="shop-full.html">Shop: Full Width</a></li>
-                            <li><a href="shop-filter.html">Shop: Filterable</a></li>
-                            <li><a href="single-product.html">Single Product</a></li>
-                            <li><a href="shopping-cart.html">Shopping Cart</a></li>
-                            <li><a href="checkout.html">Checkout</a></li>
-                        </ul>
-                    </li>
-                    <li><a>会社について</a></li>
-                    <li><a>ログイン</a></li>
-					<li><a>新規登録</a></li>   
-                </ul>
-            </div><!--/ nav-collapse -->
-        </div><!-- / container -->
-    </nav><!-- / navbar -->
+        
+<!-- ロゴと検索バーの並びを表示する　1要素<a class="navbar-brand"></a> -->
+            <!-- <div class="navbar-header"> -->
+		<div class="container">
+			<ul class="grid">
+				<!-- 右端から、ロゴ -->
+				<li class="grid-cell navbar-brand" href="index.html"><%= image_tag 'logo.png' %></li>
+				<!-- 2番目に検索バーを配置する　-->
+				<li class="grid-cell twice"><input type="text" class="navbar-brand form-control" placeholder="何かお探しですか？" required data-error="*Please fill out this field"></li>
+				<li class="grid-cell">
+					<button type="submit" class="navbar-brand btn btn-lg btn-primary btn-rounded">
+					<i class="fas fa-search fa-lg"></i>
+					</button>
+				</li>
+			</ul>
+            </div>
 
     <div id="page-header" class="shop-full">
         <div class="container">
@@ -40,7 +26,6 @@
         </div><!-- / container -->
     </div><!-- / page-header -->
 
-</header>
 <!-- / header -->
 
 <!-- content -->
@@ -373,7 +358,6 @@
             </div><!-- / content-area -->
 
         </div><!-- / row -->
-    </div><!-- / container -->
 </section>
 <!-- / shop 3col -->
 
@@ -505,4 +489,3 @@
 <!-- / preloader -->
 
 <!-- / javascript -->
-</body>
