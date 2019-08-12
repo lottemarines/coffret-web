@@ -1,11 +1,5 @@
-/* 自作部分 */
-<!-- #top-page-header ul li {
-  width: 32%;
-  float: left;
-}
-#top-page-header ul li:nth-child(3n-1) {
-  margin: 0 2%;
-} -->
+
+
 /* 検索バーの1：大きめ：1比率の表示 */
 .grid {
   margin: 0;
@@ -87,7 +81,8 @@ h6 {
 }
 
 a {
-  color: #4cbbdb;
+  <%# color: #4cbbdb; %>
+  color: white;
   -moz-transition: 0.2s ease-in;
   -o-transition: 0.2s ease-in;
   -webkit-transition: 0.2s ease-in;
@@ -2780,9 +2775,10 @@ section {
   padding: 0 30px;
 }
 
+
 #products-carousel .item img {
   display: block;
-  width: 100%;
+  width: 100% !important;
   height: auto;
 }
 
@@ -3969,13 +3965,13 @@ footer .social a {
   font-size: 14px;
   margin-left: 10px;
 }
-
+<%#一番下の背景色の設定%>
 .light-footer {
-  background: #ebebeb;
+  background: #262626;
 }
 
 .light-footer p {
-  color: #666666;
+  color: #ffffff;
 }
 
 .dark-footer {
@@ -4013,10 +4009,10 @@ footer .social a {
 .color-footer p a:hover {
   color: #cccccc;
 }
-
+<%# 下から2番目の背景色の設定%>
 /* Footer Widgets */
 .light-footer .widget-area {
-  background: #f8f8f8;
+  background: #3d3d3d;
 }
 
 .dark-footer .widget-area {
@@ -4038,6 +4034,7 @@ footer .widget-title-image {
 
 footer .widget-title h4 {
   margin-bottom: 6px;
+  color:white;
 }
 
 footer .widget-title:after {
