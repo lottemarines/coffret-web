@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>ECommerce</title>
+    <title><%= page_title %></title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+	  
   </head>
 	<header>
-
 	<!-- お知らせ用バー -->
 	<div class="top-menu top-menu-inverse">
 	  <div class="container">
@@ -19,17 +20,124 @@
 	<!-- 遷移用バー -->
 	<div class="top-menu top-menu-inverse">
 	<div class="container">
-		<p>
-			<span class="right">
-				<%= link_to "Myアカウント", '#', class:"lnr lnr-user" %>
-				<%= link_to "ログイン", '#', class:"lnr lnr-lock" %>
-				<%= link_to "新規登録", '#', class:"lnr lnr-lock" %>
-				<%= link_to "カート (2)", '#', class:"lnr lnr-cart" %>
+		
+			<span class="grid right">
+				<p>
+					
+				
+				<%= link_to do %>
+					<i class="grid-cell lnr lnr-user"></i>
+					<span>Myアカウント</span>
+				<%end%>
+				<%= link_to do %>
+					<i class="grid-cell lnr lnr-lock"></i>
+					<span>ログイン</span>
+				<%end%>
+				<%= link_to do %>
+					<i class="grid-cell lnr lnr-pencil"></i>
+					<span>新規登録</span>
+				<%end%>
+				<%= link_to do %>
+					<i class="grid-cell lnr lnr-cart"></i>
+					<span>カート (2)</span>
+				<%end%>
+				</p>
 			</span>
-		</p>
 	</div>
 	</div>
 	</header>
-	
+	<!-- ロゴと検索ヘッダー -->
+	<div class="container">
+		<ul class="grid">
+			<!--ロゴ -->
+			<li class="grid-cell navbar-brand" href="index.html"><%= image_tag 'logo.png' %></li>
+			<!-- 検索バー -->
+			<li class="grid-cell twice"><input type="text" class="navbar-brand form-control" placeholder="何かお探しですか？" required data-error="*Please fill out this field"></li>
+			<!-- 検索ボタン -->
+			<li class="grid-cell">
+				<button type="submit" class="navbar-brand btn btn-lg btn-primary btn-rounded">
+				<i class="fas fa-search fa-lg"></i>
+				</button>
+			</li>
+		</ul>
+	</div>
 	  <%= yield %>
+	
+<!-- footer -->
+<footer class="light-footer">
+    <div class="widget-area">
+        <div class="container">
+            <div class="grid row">
+                <div class="grid-cell col-sm-6 col-md-2 widget">
+                    <div class="widget-title">
+                        <h4>(株)フリーレイルズ</h4>
+                    </div>
+                    <div class="link-widget">
+                        <div class="info">
+							<%= link_to '会社概要' %>
+						</div>
+                        <div class="info">
+                            <%= link_to 'プレスリリース' %>
+                        </div>
+                        <div class="info">
+                            <%= link_to '採用情報' %>
+                        </div>
+                    </div>
+                </div><!-- / widget -->
+                <!-- / second widget -->
+
+                <div class="grid-cell col-sm-6 col-md-2 widget">
+                    <div class="widget-title">
+                        <h4>ヘルプ＆ガイド</h4>
+                    </div>
+                    <div class="link-widget">
+                        <div class="info">
+                            <%= link_to 'はじめての方へ' %>
+                        </div>
+                        <div class="info">
+                            <%= link_to '利用の流れ' %>
+                        </div>
+                        
+                        <div class="info">
+                            <%= link_to 'よくある質問' %>
+                        </div>
+                        
+                    </div>
+                </div><!-- / widget -->
+                <!-- / third widget -->
+
+                <div class="grid-cell col-sm-6 col-md-2 widget">
+                    <div class="widget-title">
+                        <h4>プライバシー&利用規約</h4>
+                    </div>
+                    <div class="contact-widget">
+                        <div class="info">
+                            <%= link_to 'プライバシーポリシー' %>
+                        </div>
+                        <div class="info">
+                            <%= link_to '利用規約' %>
+                        </div>
+                        
+                        <div class="info">
+                            <p class="social pull-left">
+                                <a class="no-margin" href="#"><i class="fab fa-facebook"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-google-plus"></i></a>
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div><!-- / contact-widget -->
+                </div>
+            </div><!-- / row -->
+        </div><!-- / container -->
+    </div><!-- / widget-area -->
+    <div class="footer-info">
+        <div class="container">
+                <div class="pull-left">
+                    <p>© 2019 - <%= page_title %></p>
+                </div>
+        </div><!-- / container -->
+    </div><!-- / footer-info -->
+</footer>
+<!-- / footer -->
+
 </html>
