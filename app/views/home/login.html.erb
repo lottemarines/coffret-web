@@ -1,0 +1,54 @@
+
+<!-- login-register -->
+<section id="login-register">
+    <div class="container">
+        <div class="row">
+            <!-- login form 1 -->
+                <div id="login-form">
+                    <h3 class="log-title">ログイン</h3>
+                    <div class="form-group">
+                        <input type="tel" class="form-control" id="e-mail" placeholder="メール" required data-error="*Please fill out this field">
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" id="password" placeholder="パスワード" required>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <!-- log-line -->
+                    <div class="log-line">
+                        <div class="pull-left">
+                            <div class="checkbox checkbox-primary space-bottom">
+                                <label class="hide"><input type="checkbox"></label>
+                                <input id="checkbox1" type="checkbox">
+                                <label for="checkbox1"><span>パスワードを記憶</span></label>
+                            </div>
+                        </div>
+                        <div class="pull-right">
+                            <a href="my-account.html" class="btn btn-md btn-primary-filled btn-log btn-rounded">ログインする</a>
+                            <div id="msgSubmit" class="h3 text-center hidden"></div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div><!-- / log-line -->
+					<%= link_to "パスワードを忘れた方はこちら", "#", class: "forgot-password" %>
+                </div>
+            <!-- / login form 1 -->
+
+        </div><!-- / row -->
+        <!-- / form 1 -->
+    </div><!-- / container -->
+</section>
+<!-- / login-register -->
+
+<!-- / content -->
+
+
+<!-- javascript -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+
+<!-- preloader -->
+<script src="js/preloader.js"></script>
+<!-- / preloader -->
+
+<!-- / javascript -->

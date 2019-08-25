@@ -1,0 +1,69 @@
+
+<!-- shopping-cart -->
+<div id="shopping-cart">
+    <div class="container">
+        <!-- shopping cart table -->
+        <table class="shopping-cart">
+            <thead>
+                <tr>
+                    <th class="image">&nbsp;</th>
+                    <th>商品名</th>
+                    <th>価格</th>
+                    <th>注文数</th>
+                    <th>金額</th>
+                    <th>&nbsp;</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="cart-item">
+                    <td class="image"><a href="#"><%= image_tag "150x150.png" %></a></td>
+                    <td><p >商品名１</p></td>
+                    <td>$59</td>
+                    <td class="qty"><input type="number" step="1" min="0" name="cart" value="1" title="Qty" class="input-text qty text" size="4"></td>
+                    <td>$59</td>
+                    <td class="remove"><a href="#x" class="btn btn-danger-filled x-remove">×</a></td>
+                </tr>
+                <tr class="cart-item">
+                    <td class="image"><a href="#"><%= image_tag "150x150.png" %></a></td>
+                    <td><p>商品名２</p></td>
+                    <td>$69</td>
+                    <td class="qty"><input type="number" step="1" min="0" name="cart" value="2" title="Qty" class="input-text qty text" size="4"></td>
+                    <td>$138</td>
+                    <td class="remove"><a href="#x" class="btn btn-danger-filled x-remove">×</a></td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- / shopping cart table -->
+
+        <div class="row cart-footer">
+            <div class="col-sm-6 cart-total">
+                <h4>合計金額</h4>
+                <p>金額: <span>$197</span></p>
+                <p>配送料: <span>Free</span></p>
+                <p>合計金額: <span>$197</span></p>
+            </div><!-- / cart-total -->
+
+            <div class="col-sm-6 cart-checkout">
+                <a href="shop-right.html" class="btn btn-default-filled btn-rounded"><i class="lnr lnr-cart"></i> <span>買い物を続ける</span></a>
+                <a href="checkout" class="btn btn-primary-filled btn-rounded"><i class="lnr lnr-exit"></i> <span>お会計へ向かう（まだ購入は確定しません）</span></a>
+            </div><!-- / cart-checkout -->
+
+
+        </div><!-- / row -->
+    </div><!-- / container -->
+</div>
+<!-- / shopping-cart -->
+
+<!-- / content -->
+
+
+
+<!-- javascript -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+
+<!-- preloader -->
+<script src="js/preloader.js"></script>
+<!-- / preloader -->
+

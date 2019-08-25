@@ -1,0 +1,101 @@
+
+<section id="my-account">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-2 account-sidebar">
+                <%= image_tag '300x300.png' %>
+				<p><a href="#wishlist" class="page-scroll">お気に入り</a></p>
+				<p><a href="#my-orders" class="page-scroll">注文履歴</a></p>
+                <p><a href="#personal-info" class="page-scroll">基本情報</a></p>
+                <p><a href="#shipping-info" class="page-scroll">配送情報</a></p>
+            </div>
+            <div class="col-sm-10 account-info">
+				<div id="wishlist" class="account-info-content">
+                    <h4>お気に入り <span class="pull-right"><%= link_to "account_favorites", class: "btn btn-sm btn-default btn-rounded no-margin" do %>
+								<i class="lnr lnr-pencil">
+								</i>
+								<span>もっと見る(account_favorites)</span>
+							<%end%></span></h4>
+                    <p><a href="#x">商品名 1</a> - <span>Price: $29</span></p>
+                    <p><a href="#x">商品名 2</a> - <span>Price: $59</span></p>
+                    <p><a href="#x">商品名 3</a> - <span>Price: $69</span></p>
+                </div><!-- / wishlist -->
+				<div id="my-orders" class="account-info-content">
+                    <h4>注文履歴 <span class="pull-right">
+						<%= link_to "account_orders", class: "btn btn-sm btn-default btn-rounded no-margin" do %>
+								<i class="lnr lnr-pencil">
+								</i>
+								<span>もっと見る(account_orders)</span>
+							<%end%>
+						</span></h4>
+                    <p><a href="#x">Order #38726</a> <span>- Paid & Shipped</span> - Tracking No: <span>#TRCK182736</span></p>
+                    <p><a href="#x">Order #34823</a> <span>- Completed on 25.10.2016</span></p>
+                    <p><a href="#x">Order #23463</a> <span>- Completed on 16.08.2016</span></p>
+                </div><!-- / my-orders -->
+				
+                <div id="personal-info" class="account-info-content">
+					
+                    <h4>基本情報
+						<span class="pull-right">
+							<%= link_to "account_user_input", class: "btn btn-sm btn-default btn-rounded no-margin" do %>
+								<i class="lnr lnr-pencil">
+								</i>
+								<span>編集(account_user_input)</span>
+							<%end%>
+						</span>
+					</h4>
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-4 col-md-2">
+							<%= image_tag '300x300.png' %>
+                        </div>
+
+                        <div class="col-xs-6 col-sm-8 col-md-10">
+                            <p>名前: <span>John Doe</span></p>
+                            <p>Eメール: <span>me@mysite.com</span></p>
+                            <p>誕生日: <span>Aug. 13, 1991</span></p>
+                        </div>
+
+                    </div><!-- / row -->
+                </div><!-- / personal-info -->
+
+                <div id="shipping-info" class="account-info-content">
+                    <h4>配送先情報<span class="pull-right">
+						<%= link_to "account_deliveryaddress_input", class: "btn btn-sm btn-default btn-rounded no-margin" do %>
+								<i class="lnr lnr-pencil">
+								</i>
+								<span>編集(account_deliveryaddress_input)</span>
+							<%end%>
+						</span></h4>
+                    <p>電話番号: <span>+0123 456 789</span></p>
+                    <p>郵便番号: <span>274-0825</span></p>
+                    <p>都道府県: <span>千葉県</span></p>
+                    <p>市区町村: <span>船橋市</span></p>
+                    <p>町名番地: <span>前原西3－13－3</span></p>
+                    <p>建物名: <span>ある場合：名前　ない場合：--</span></p>
+                </div><!-- / shipping-info -->
+
+                
+                
+
+            </div><!-- / account-info -->
+
+        </div><!-- / row -->
+    </div><!-- / container -->
+</section>
+<!-- / my-account -->
+
+<!-- / content -->
+
+<!-- javascript -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+
+<!-- scrolling-nav -->
+<script src="js/scrolling-nav.js"></script>
+<!-- / scrolling-nav -->
+
+<!-- preloader -->
+<script src="js/preloader.js"></script>
+<!-- / preloader -->
+

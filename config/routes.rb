@@ -1,4 +1,16 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-	get "/" => "home#top"
+	get "" => "home#top"
+	get "login" => "home#login"
+	get "register" => "home#register"
+	get "about" => "home#about"
+	get "news" => "home#news"
+	get "single-product" => "home#product"
+	get "cart" => "home#cart"
+	get "checkout" => "home#checkout"
+	get "account" => "home#account"
+	get "account_user_input" => "home#account_user_input"
+	get "account_deliveryaddress_input" => "home#account_deliveryaddress_input"
+	get "account_orders" => "home#account_orders"
+	get "account_reviews" => "home#account_reviews"
+	get "account_favorites" => "home#account_favorites"
 end

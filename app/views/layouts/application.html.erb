@@ -23,21 +23,19 @@
 		
 			<span class="grid right">
 				<p>
-					
-				
-				<%= link_to do %>
+				<%= link_to "account" do %>
 					<i class="grid-cell lnr lnr-user"></i>
 					<span>Myアカウント</span>
 				<%end%>
-				<%= link_to do %>
+				<%= link_to "login" do %>
 					<i class="grid-cell lnr lnr-lock"></i>
 					<span>ログイン</span>
 				<%end%>
-				<%= link_to do %>
+				<%= link_to "register" do %>
 					<i class="grid-cell lnr lnr-pencil"></i>
 					<span>新規登録</span>
 				<%end%>
-				<%= link_to do %>
+				<%= link_to "cart" do %>
 					<i class="grid-cell lnr lnr-cart"></i>
 					<span>カート (2)</span>
 				<%end%>
@@ -50,9 +48,13 @@
 	<div class="container">
 		<ul class="grid">
 			<!--ロゴ -->
-			<li class="grid-cell navbar-brand" href="index.html"><%= image_tag 'logo.png' %></li>
+			<li class="grid-cell grid-cell-logo">
+				<%= link_to "/" do%>
+				<%= image_tag 'logo.png', :style => "height:90px" %>
+				<%end%>
+			</li>
 			<!-- 検索バー -->
-			<li class="grid-cell twice"><input type="text" class="navbar-brand form-control" placeholder="何かお探しですか？" required data-error="*Please fill out this field"></li>
+			<li class="grid-cell fifth"><input type="text" class="navbar-brand form-control" placeholder="何かお探しですか？" required data-error="*Please fill out this field"></li>
 			<!-- 検索ボタン -->
 			<li class="grid-cell">
 				<button type="submit" class="navbar-brand btn btn-lg btn-primary btn-rounded">
@@ -74,13 +76,10 @@
                     </div>
                     <div class="link-widget">
                         <div class="info">
-							<%= link_to '会社概要' %>
+							<%= link_to '会社概要',"about" %>
 						</div>
                         <div class="info">
-                            <%= link_to 'プレスリリース' %>
-                        </div>
-                        <div class="info">
-                            <%= link_to '採用情報' %>
+                            <%= link_to 'プレスリリース', "news" %>
                         </div>
                     </div>
                 </div><!-- / widget -->
@@ -88,18 +87,15 @@
 
                 <div class="grid-cell col-sm-6 col-md-2 widget">
                     <div class="widget-title">
-                        <h4>ヘルプ＆ガイド</h4>
+                        <h4>ヘルプ</h4>
                     </div>
                     <div class="link-widget">
                         <div class="info">
-                            <%= link_to 'はじめての方へ' %>
-                        </div>
-                        <div class="info">
-                            <%= link_to '利用の流れ' %>
+                            <%= link_to '利用の流れ（工事中）' %>
                         </div>
                         
                         <div class="info">
-                            <%= link_to 'よくある質問' %>
+                            <%= link_to 'よくある質問（工事中）' %>
                         </div>
                         
                     </div>
@@ -108,7 +104,7 @@
 
                 <div class="grid-cell col-sm-6 col-md-2 widget">
                     <div class="widget-title">
-                        <h4>プライバシー&利用規約</h4>
+                        <h4>規約</h4>
                     </div>
                     <div class="contact-widget">
                         <div class="info">
