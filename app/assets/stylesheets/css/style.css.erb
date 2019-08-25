@@ -1,4 +1,133 @@
+/* 商品の要素をPCだと横並びに、スマホだと縦並びにするスタイル決め　※要素が5個の場合 */
+ .box1-order {
+     width: 20%;
+     margin: 0px;
+ }
+ .box2-order {
+     width: 20%;
+     margin: 0px;
+ }
+ .box3-order {
+     width: 20%;
+     margin: 0px;
+ }
+ .box4-order {
+     width: 20%;
+     margin: 0px;
+ }
+ .box5-order {
+     width: 20%;
+     margin: 0px;
+ }
+@media screen and (max-width: 767px) {
+ .box1-order.box2-order.box3-order.box4-order.box5-order {
+     width: 100%;
+     margin: 0 auto;
+ }
+}
 
+/* 商品の要素をPCだと横並びに、スマホだと縦並びにするスタイル決め　※要素が2個の場合 */
+ .box1-checkout {
+     width: 50%;
+     margin: 0px;
+ }
+ .box2-checkout {
+     width: 50%;
+     margin: 0px;
+ }
+
+ @media screen and (max-width: 767px) {
+     .flexbox {
+         display: block;
+     }
+     .flexbox .box1-checkout {
+         width: 100%;
+         margin: 0 auto;
+     }
+     .flexbox .box2-checkout {
+         width: 100%;
+         margin: 0 auto;
+     }
+ }
+
+/* 商品の要素をPCだと横並びに、スマホだと縦並びにするスタイル決め　※要素が3個の場合 */
+.contents {
+     width: 100%;
+     max-width: 1200px;
+     margin: auto;
+ }
+ .contents img {
+     width: 100%;
+ }
+ .text-center {
+     text-align: center;
+ }
+ .flexbox {
+     display: flex;
+ }
+ .box1 {
+     width: 30%;
+     margin: 0px;
+ }
+ .box2 {
+     width: 40%;
+     margin: 0px;
+ }
+ .box3 {
+     width: 30%;
+     margin: 0px;
+ }
+ @media screen and (max-width: 767px) {
+     .flexbox {
+         display: block;
+     }
+     .flexbox .box1 {
+         width: 100%;
+         margin: 0 auto;
+     }
+     .flexbox .box2 {
+         width: 100%;
+         margin: 0 auto;
+     }
+     .flexbox .box3 {
+         width: 100%;
+         margin: 0 auto;
+     }
+ }
+/* OWLのスクロールバーの設定 */
+/*style.css*/
+.carousel-item .img-fluid {
+  width:100%;
+  height:auto;
+}
+
+.carousel-item{
+  height: auto;
+}
+
+.carousel-item a {
+  display: block;
+  width:100%;
+}
+
+.carousel-item .show-image {
+  display: block;
+  width:100%;
+}
+.owl-prev,
+.owl-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.owl-prev {
+  left: 0rem;
+}
+
+.owl-next {
+  right: 0rem;
+}
 
 /* 検索バーの1：大きめ：1比率の表示 */
 .grid {
@@ -8,16 +137,38 @@
   display: flex;
   list-style: none;
 }
+.grid-logo{
+  height: 100px;
+}
 .grid-cell {
   margin: 5px;
-  padding: 0px;
   border-radius: 5px;
   line-height: 1;
   flex: 1;
 }
+@media screen and (max-width: 767px) {
+	.grid-cell img {
+	  height:80%!important;
+	  width:80%!important;
+	}
+    .grid-cell-logo {
+	  flex: 3;
+	}
+	.mobile-comapny-table{
+	  flex: 10 !important;
+	}
+}
 /*以下の数字で検索バーの大きさを調整できる*/
+
+.fifth{
+  flex: 5;
+}
+
 .twice {
   flex: 4;
+}
+.third {
+  flex: 3;
 }
 
 /* Base CSS */
@@ -81,8 +232,7 @@ h6 {
 }
 
 a {
-  <%# color: #4cbbdb; %>
-  color: white;
+  color: #4cbbdb;
   -moz-transition: 0.2s ease-in;
   -o-transition: 0.2s ease-in;
   -webkit-transition: 0.2s ease-in;
@@ -1097,7 +1247,6 @@ a.btn-social {
 
 .checkbox label::after {
   display: inline-block;
-  position: absolute;
   width: 25px;
   height: 25px;
   left: 0;
@@ -3073,37 +3222,8 @@ section {
   color: #ebebeb;
 }
 
-#page-header.shop-right {
-  background-image: url("<%= asset_path("page-header.jpg") %>");
-}
 
-#page-header.shop-left {
-  background-image: url("<%= asset_path("page-header.jpg") %>");
-}
 
-#page-header.shop-full {
-  background-image: url("<%= asset_path("page-header.jpg") %>");
-}
-
-#page-header.shop-filter {
-  background-image: url("<%= asset_path("page-header.jpg") %>");
-}
-
-#page-header.about {
-  background-image: url("<%= asset_path("page-header.jpg") %>");
-}
-
-#page-header.blog {
-  background-image: url("<%= asset_path("page-header.jpg") %>");
-}
-
-#page-header.contact {
-  background-image: url("<%= asset_path("page-header.jpg") %>");
-}
-
-#page-header.login-register {
-  background-image: url("<%= asset_path("page-header.jpg") %>");
-}
 
 /* No Image by Default */
 #page-header.single-product {
@@ -3543,6 +3663,7 @@ section {
 
 .forgot-password {
   font-size: 16px;
+  color: black !important; 
 }
 
 /* End Login / Register Forms */
@@ -4246,7 +4367,7 @@ footer #newsletter .form-control {
 
   .navbar-brand {
     font-size: 20px;
-    line-height: 20px;
+    line-height: 0px;
     font-weight: 700;
     height: 50px;
     padding: 15px 15px;
@@ -4499,7 +4620,7 @@ footer #newsletter .form-control {
   }
 
   #shop .col-xs-6 {
-    width: 100%;
+    width: 50%;
   }
 
   .shop-results .pull-right {

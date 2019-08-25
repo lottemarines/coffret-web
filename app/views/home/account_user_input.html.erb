@@ -1,0 +1,82 @@
+
+<!-- login-register -->
+<section id="login-register">
+    <div class="container">
+        <div class="row">
+            <!-- register form 1 -->
+                <div id="register-form">
+                    <h3 class="log-title">基本情報の編集</h3>
+					<div style="text-align: center;"><p>メールアドレス</p></div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="register-email" placeholder="メール" required data-error="*Please fill out this field">
+                        <div class="help-block with-errors"></div>
+                    </div>
+					<div style="text-align: center; padding-top: 15px"><p>氏名</p></div>
+                    <div class="form-group grid">
+                        <input type="text" class="grid-cell form-control" id="register-username" placeholder="姓（全角）" required>
+						<input type="text" class="grid-cell form-control" id="register-username" placeholder="名（全角）" required>
+                        <div class="help-block with-errors">	</div>
+                    </div>
+					<div class="form-group grid">
+                        <input type="text" class="grid-cell form-control" id="register-username" placeholder="セイ（カナ）" required>
+						<input type="text" class="grid-cell form-control" id="register-username" placeholder="メイ（カナ）" required>
+                        <div class="help-block with-errors">	</div>
+					</div>
+					<div style="text-align: center; padding-top: 15px"><p>生年月日（登録後は変更できません）</p></div>
+					<div class="form-group grid">
+                        <select name="year" class="grid-cell form-control">
+						<option value="2019">2019</option>
+						</select>
+						<p style="padding-top: 20px;">年</p>
+						<select name="month" class="grid-cell form-control">
+						<option value="7">7</option>
+						</select>
+						<p style="padding-top: 20px;">月</p>
+						<select name="day" class="grid-cell form-control">
+						<option value="5">5</option>
+						</select>
+						<p style="padding-top: 20px;">日</p>
+					</div>
+					<div style="text-align: center; padding-top: 15px;"><p>パスワード(最低8桁の情報を入力してください)</p></div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" id="register-password" placeholder="パスワード" required data-error="*Please fill out this field">
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" id="register-cpassword" placeholder="確認用パスワード" required>
+						
+                    <div class="flexbox">
+                        <div class="box1-checkout">
+                        </div>
+                        <div class="box2-checkout">
+							<%= link_to "account", class: "" do %>
+                            <button type="submit" id="reg-submit" class="pull-right btn btn-md btn-primary-filled btn-log btn-rounded">変更を保存する</button>
+							<%end%>
+                            <div id="register-msgSubmit" class="h3 text-center hidden"></div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div><!-- / log-line -->
+                </div>
+            <!-- / register form 1 -->
+        </div><!-- / row -->
+        <!-- / form 1 -->
+    </div><!-- / container -->
+</section>
+<!-- / login-register -->
+
+<!-- / content -->
+
+
+<!-- javascript -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+
+<!-- preloader -->
+<script src="js/preloader.js"></script>
+<!-- / preloader -->
+
+<!-- / javascript -->
+</body>
+
+</html>
